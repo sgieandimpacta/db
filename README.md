@@ -17,7 +17,7 @@ O README de cada um deles contém o passo a passo para que você consiga rodar o
 ### 📋 Pré-requisitos
 
 De que coisas você precisa para instalar o software e como instalá-lo?
-- Você precisará do docker em sua máquina, siga o passo a passo direto do guia de instalação contido neste [link](https://docs.docker.com/engine/install/ubuntu/)
+- Você precisará do docker em sua máquina, caso não tenha instalado você pode seguir o passo a passo direto do guia de instalação contido neste [link](https://docs.docker.com/engine/install/ubuntu/)
 - Após a instalação do docker, tudo que precisa fazer é seguir os passos na etapa abaixo
 
 ### 🔧 Instalação
@@ -27,28 +27,24 @@ Caso ainda não tenha feito o clone do projeto, pode fazê-lo rodando o comando 
 
 ```
 git clone https://github.com/sgieandimpacta/db.git
-
 ```
 
 Caso não tenha mudado o nome do projeto durante o clone, poderá entrar na pasta usando o comando:
 
 ```
 cd db
-
 ```
 
 Para realizar a subida basta rodar o comando docker compose que realizará o build e o up dos serviços:
 
 ```
 docker-compose up -d --build
-
 ```
 
 Para confirmar se os serviços estão de pé, rode o comando:
 
 ```
 docker-compose ps -a
-
 ```
 
 Uma lista de containers como a abaixo será exibida:
