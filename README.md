@@ -1,6 +1,7 @@
 # SGP - Banco de Dados
 
 Esse serviço faz parte do projeto de gestão de pagamentos para a empresa Farmácioa Nossa Senhora da Conceição. O objetivo é facilitar a organização, gerenciamento e visibilidade dos pagamentos efetuados.
+
 - Iniciativa Impacta - Projeto de Conclusão de Curso
 
 ## 🚀 Começando
@@ -8,6 +9,7 @@ Esse serviço faz parte do projeto de gestão de pagamentos para a empresa Farm�
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
 O projeto está estruturado em três serviços:
+
 - SGP - [front-end](https://github.com/sgieandimpacta/mfe.git)
 - SGP - [back-end](https://github.com/sgieandimpacta/api.git)
 - SGP - [Banco de Dados](https://github.com/sgieandimpacta/db.git)
@@ -17,11 +19,11 @@ O README de cada um deles contém o passo a passo para que você consiga rodar o
 ### 📋 Pré-requisitos
 
 De que coisas você precisa para instalar o software e como instalá-lo?
+
 - Você precisará do docker em sua máquina, caso não tenha instalado você pode seguir o passo a passo direto do guia de instalação contido neste [link](https://docs.docker.com/engine/install/ubuntu/)
 - Após a instalação do docker, tudo que precisa fazer é seguir os passos na etapa abaixo
 
 ### 🔧 Instalação
-
 
 Caso ainda não tenha feito o clone do projeto, pode fazê-lo rodando o comando abaixo na pasta onde queira o projeto
 
@@ -51,14 +53,31 @@ Uma lista de containers como a abaixo será exibida:
 
 ![containers de banco mysql e admin de pé no docker](https://i.postimg.cc/m24Ch0G5/Captura-de-tela-2023-03-30-225925.png)
 
+Você pode acessar o adminer através da url:
+
+```
+http://localhost:8080/
+```
+
+E as configurações para uma conexão ao banco padrão são:
+
+```
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=admin@123
+MYSQL_DB_NAME=sgpa
+DB_CONNECTION=mysql
+```
+
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [docker](https://www.docker.com/) - Develop faster. Run anywhere.
-* [mysql](https://www.mysql.com/) - Save time and money powering their high-volume Web sites, business-critical systems and packaged software.
-* [adminer](https://www.adminer.org/) - A full-featured database management tool written in PHP
+- [docker](https://www.docker.com/) - Develop faster. Run anywhere.
+- [mysql](https://www.mysql.com/) - Save time and money powering their high-volume Web sites, business-critical systems and packaged software.
+- [adminer](https://www.adminer.org/) - A full-featured database management tool written in PHP
 
 ## ✒️ Autores
 
-* **Gieandes Silva** - [likedin](https://www.linkedin.com/in/gieandessilva)
+- **Gieandes Silva** - [likedin](https://www.linkedin.com/in/gieandessilva)
